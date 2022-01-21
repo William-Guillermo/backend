@@ -7,13 +7,16 @@ def suma(num1,num2):
     
 
 def resta(num1, num2):
-    pass
+    resta = num1 - num2
+    print(f"la resta de los dos numero es: {resta}")
 
 def multiplicacion(num1, num2):
-    pass
+    multi = num1 * num2
+    print(f"la multiplicacion de los dos numero es: {multi}")
 
 def division(num1, num2):
-    pass
+    division = num1 / num2
+    print(f"la Division de los dos numero es: {division}")
 
 
 def salir():
@@ -35,7 +38,22 @@ def menu():
         numero1 = int(input("Introduce numero1:"))
         numero2 = int(input("Introduce numero1:"))
         suma(numero1,numero2)
-        
+
+    if operacion == 2:
+        numero1 = int(input("Introduce numero1:"))
+        numero2 = int(input("Introduce numero1:"))
+        resta(numero1,numero2)
+
+    if operacion == 3:
+        numero1 = int(input("Introduce numero1:"))
+        numero2 = int(input("Introduce numero1:"))
+        multiplicacion(numero1,numero2)
+
+    if operacion == 4:
+        numero1 = int(input("Introduce numero1:"))
+        numero2 = int(input("Introduce numero1:"))
+        division(numero1,numero2)
+
     if operacion == 5:
         salir()
 

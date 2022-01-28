@@ -13,3 +13,15 @@ print(f"los numeros de la lista son: {edades}")
 print(f"el numero maximo de la lista es:{max(edades)}")
 print(f"el numero minimo de la lista es:{min(edades)}")
 print(len(edades))
+
+for edad in edades:
+    print(edad)
+
+# scrip de numero pares  con listas de 1 al 100 y un for y solo guarda en la lista los numeros pares
+
+pares = []
+for i in range (100):
+    if i % 2 == 0:
+        pares.append(i)
+print(pares)
+

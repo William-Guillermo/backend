@@ -16,7 +16,16 @@ class Auto:
 
     def __str__(self):
         return f"Auto: {self.modelo},{self.color},{self.cantidad_ruedas},{self.velocidad_maxima}"
+    
+    def acelerar(self):
+        print(f'en auto {self.modelo} a a celerado hasta {self.velocidad_maxima} km')
+
+    def frenar(self):
+        print(f'en auto {self.modelo} a frenado')
 
 nissan = Auto('marsh','azul',4,'320')
 print(nissan)
 print(nissan.modelo)
+nissan.acelerar()
+nissan.frenar()
+

@@ -12,7 +12,9 @@ class Auto:
         self.color = color
         self.cantidad_ruedas = cantidad_rudas
         self.velocidad_maxima = velocidad_maxima
+        self.gama= {"Alta":"Nissan Altima","baja":"Nissan Tsuru"}
         self.motor = 2.0
+        
 
     def __str__(self):
         return f"Auto: {self.modelo},{self.color},{self.cantidad_ruedas},{self.velocidad_maxima}"
@@ -28,4 +30,12 @@ print(nissan)
 print(nissan.modelo)
 nissan.acelerar()
 nissan.frenar()
+
+
+# se puede accesar a sus atributos y cambiarlos de la siguiente manera ejemplo   en nissan ya se mando color azul pero la siguiente linea lo cambia
+
+nissan.color= "Amarillo"
+print(nissan.color)
+print (nissan.gama["Alta"])
+
 

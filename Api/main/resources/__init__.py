@@ -1,0 +1,1 @@
+from .Clientes import Clientes as ClienteResource

@@ -26,3 +26,13 @@ class Clientes(Resource):
                 }
 
             )
+
+class Cliente(Resource):
+    def get(self,id):
+
+            return jsonify(
+                {
+                    "cliente":clientes[int(id)]
+                }
+
+            )
